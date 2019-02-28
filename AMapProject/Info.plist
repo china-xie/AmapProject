@@ -27,8 +27,6 @@
 	</dict>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string> Location Always Usage Description</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string> Location When In Use Usage Description</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>location</string>
@@ -54,5 +52,17 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>12211</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>2112212121</string>
+	<key>CFBundleAllowMixedLocalizations</key>
+	<false/>
+	<key>CFBundleLocalizations</key>
+	<array>
+		<string>en</string>
+	</array>
+	<key>CFBundleDisplayName</key>
+	<string></string>
 </dict>
 </plist>

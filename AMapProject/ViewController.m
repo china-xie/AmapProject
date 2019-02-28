@@ -5,7 +5,7 @@
 //  Created by xie on 2017/8/9.
 //  Copyright © 2017年 xie. All rights reserved.
 //
-
+#import  <Masonry.h>
 #import "ViewController.h"
 #import <MAMapKit/MAMapKit.h>
 #import <AMapFoundationKit/AMapFoundationKit.h>
@@ -90,7 +90,7 @@
     
     imageView.autoresizingMask=UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
     
-    imageView.image= [UIImage imageNamed:@"Balloon"];
+    imageView.image= [UIImage imageNamed:@"redPin_lift"];
     
     [self.view addSubview:imageView];
     
@@ -114,6 +114,14 @@
 //    MAMapStatus *status = [self.mapView getMapStatus];
 //    status.screenAnchor = CGPointMake(0.5, 0.5);//地图左上为(0,0)点，右下为(1,1)点。
 //    [self.mapView setMapStatus:status animated:NO];
+   
+    
+//    NSString *path = [NSString stringWithFormat:@"%@/mystyle_sdk_1510206859_0100.data", [NSBundle mainBundle].bundlePath];
+//     NSString *file = [[NSBundle mainBundle] pathForResource:@"0100.data" ofType:nil];
+    NSString *file = [NSString stringWithFormat:@"%@/mystyle_sdk_1510210749_0100.data", [NSBundle mainBundle].bundlePath];
+    NSData *data = [NSData dataWithContentsOfFile:file];
+    [self.mapView setCustomMapStyleWithWebData:data];
+    [self.mapView setCustomMapStyleEnabled:YES];
       [self addbottomView];
 
     
